@@ -231,10 +231,12 @@ function App() {
   const changeState = (e) => {
     setCityData(states[e.target.value].city);
     setState(e.target.value);
+    setCity(0);
   };
   const changeCity = (e) => {
     setLandmarkData(states[state].city[e.target.value].landmarks);
     setCity(e.target.value);
+    setLandmark(0);
   };
   const changeLandmark = (e) => {
     setLandmark(e.target.value);
