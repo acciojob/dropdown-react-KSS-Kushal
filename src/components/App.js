@@ -230,6 +230,7 @@ function App() {
 
   const changeState = (e) => {
     setCityData(states[e.target.value].city);
+    setLandmarkData(states[e.target.value].city[0].landmarks)
     setState(e.target.value);
     setCity(0);
   };
