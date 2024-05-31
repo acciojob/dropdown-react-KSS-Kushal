@@ -280,16 +280,16 @@ function App() {
           </option>
         ))}
       </select>
-      <div classNameName="state-title">{states[state].name}</div>
-      <div classNameName="state-description">{states[state].description}</div>
-      <div classNameName="city-title">{states[state].city[city].name}</div>
-      <div classNameName="city-description">
+      <div id="state-name">{states[state].name}</div>
+      <div id="state-description">{states[state].description}</div>
+      <div id="city-name">{states[state].city[city].name}</div>
+      <div id="city-description">
         {states[state].city[city].description}
       </div>
-      <div classNameName="landmark-title">
+      <div id="landmark-name">
         {states[state].city[city].landmarks[landmark].name}
       </div>
-      <div classNameName="landmark-description">
+      <div id="landmark-description">
         {states[state].city[city].landmarks[landmark].description}
       </div>
     </div>
